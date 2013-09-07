@@ -16,9 +16,9 @@ module ApplicationHelper
         ret += link_to category.name
         ret += "</td>"
         ret += "</tr>"
-
+      if @colspan > 0
         ret += find_all_subcategories(category)
-
+      end
       end
     end
     ret += "</table>"
