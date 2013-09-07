@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   acts_as_tree
   attr_accessible :name, :parent_id
-  validates_presence_of :name,:parent_id
+  validates_presence_of :name
 
   def all_children
     all = []
