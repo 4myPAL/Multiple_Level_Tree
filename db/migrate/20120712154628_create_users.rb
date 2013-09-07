@@ -6,5 +6,6 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
+    User.create :name=> "root", :parent_id => ""
   end
 end
