@@ -1,7 +1,7 @@
 Mlm::Application.routes.draw do
   resources :users
 
-  match 'create_user' => "users#create_user", :as=>"user"
+  #match 'create_user' => "users#create_user", :as=>"user"
   root :to => 'users#index'
 
   # The priority is based upon order of creation:
